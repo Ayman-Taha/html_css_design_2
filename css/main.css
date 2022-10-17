@@ -1,3 +1,18 @@
+/****************************/
+/***** Global Variables *****/
+/****************************/
+:root {
+	--main-theme-color: #19c8fa;
+	--secondary-theme-color: #2c4755;
+	--section-padding: 60px 0;
+	--p-font-size: 18px;
+	--p-line-height: 1.5;
+	--p-font-color: #777;
+	--p-font-weight: 300;
+	--background-color: #f6f6f6;
+	--grid-gap: 20px;
+}
+
 /************************/
 /***** Global Rules *****/
 /************************/
@@ -12,6 +27,7 @@
 
 body {
 	font-family: "Open Sans", sans-serif;
+	background-color: black;
 }
 
 ul {
@@ -39,4 +55,80 @@ ul {
 	.container {
 		width: 1170px;
 	}
+}
+
+/******************/
+/***** Header *****/
+/******************/
+
+header {
+}
+
+header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+header .container::after {
+	content: "";
+	position: absolute;
+	height: 1px;
+	background-color: #a2a2a2;
+	bottom: 0;
+	left: 15px;
+	width: calc(100% - 30px);
+}
+
+header .logo img {
+	height: 40px;
+}
+
+header nav {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: end;
+}
+
+header nav ul {
+	display: flex;
+}
+
+header nav ul li a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 40px 10px;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+	position: relative;
+	z-index: 1;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+	color: var(--main-theme-color);
+	border-bottom: 2px solid var(--main-theme-color);
+}
+
+header nav .form {
+	width: 40px;
+	height: 30px;
+	position: relative;
+	margin-left: 30px;
+	border-left: 1px solid white;
+}
+
+header nav .form i {
+	color: white;
+	position: absolute;
+	font-size: 20px;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
 }
