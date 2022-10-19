@@ -54,7 +54,7 @@ ul {
 /**********************/
 /* These will be used in more than one place/section */
 
-/* vertical centering with pos and transform */
+/* vertical and horizontal centering with pos and transform */
 .v-center {
 	position: absolute;
 	top: 50%;
@@ -63,6 +63,16 @@ ul {
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
+}
+
+.h-center {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
 }
 
 /******************/
@@ -262,4 +272,14 @@ header nav .form i {
 .landing .bullets li.active {
 	background-color: var(--main-theme-color);
 	border-color: var(--main-theme-color);
+}
+
+@media (max-width: 767px) {
+	.landing .landing-content {
+		width: 100%;
+	}
+
+	.landing .landing-content .text {
+		max-width: 90%;
+	}
 }
