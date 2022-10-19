@@ -49,6 +49,22 @@ ul {
 	}
 }
 
+/**********************/
+/***** Components *****/
+/**********************/
+/* These will be used in more than one place/section */
+
+/* vertical centering with pos and transform */
+.v-center {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
+
 /******************/
 /***** Header *****/
 /******************/
@@ -132,12 +148,8 @@ header nav i {
 	font-size: 20px;
 }
 
-/* vertical centering with pos and transform */
 header nav .form i {
 	padding-left: 20px;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
 }
 
 /* using burger icon to collapse nav in smaller screens */
@@ -191,10 +203,7 @@ header nav .form i {
 
 /* landing content */
 .landing .landing-content {
-	position: absolute;
 	left: 0;
-	top: 50%;
-	transform: translateY(-50%);
 	width: 50%;
 	padding: 50px;
 	background-color: var(--transparent-color);
@@ -218,4 +227,39 @@ header nav .form i {
 .landing .landing-content .text p {
 	font-size: 1rem;
 	line-height: 2;
+}
+
+/* landing slider arrows and bullets */
+.landing .change-background {
+	color: white;
+}
+
+.landing .left-arrow {
+	left: 40px;
+}
+
+.landing .right-arrow {
+	right: 40px;
+}
+
+.landing .bullets {
+	bottom: 40px;
+	display: flex;
+}
+
+.landing .bullets li {
+	width: 20px;
+	height: 20px;
+	border: 1px solid white;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	margin-right: 10px;
+}
+
+.landing .bullets li.active {
+	background-color: var(--main-theme-color);
+	border-color: var(--main-theme-color);
 }
