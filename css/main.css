@@ -143,7 +143,7 @@ header nav ul li a:hover {
 	border-bottom: 2px solid var(--main-theme-color);
 }
 
-/* pos relative to pos contents with abs */
+/* pos relative for parent to pos children with abs */
 header nav .form {
 	width: 40px;
 	height: 30px;
@@ -269,17 +269,25 @@ header nav .form i {
 	margin-right: 10px;
 }
 
+/* the active bullet */
 .landing .bullets li.active {
 	background-color: var(--main-theme-color);
 	border-color: var(--main-theme-color);
 }
 
+/* small screen landing */
 @media (max-width: 767px) {
+	/* expanding the content and text */
 	.landing .landing-content {
 		width: 100%;
+		/* justify-content: center; */
 	}
 
 	.landing .landing-content .text {
-		max-width: 90%;
+		max-width: 100%;
+	}
+	/* hiding the arrows */
+	.landing .change-background {
+		display: none;
 	}
 }
