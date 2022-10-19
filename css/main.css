@@ -54,6 +54,62 @@ ul {
 /**********************/
 /* These will be used in more than one place/section */
 
+.special-heading {
+	text-align: center;
+}
+
+.special-heading h2 {
+	font-weight: normal;
+	font-size: 40px;
+	position: relative;
+	margin-bottom: 70px;
+	text-transform: uppercase;
+}
+
+.special-heading h2::before {
+	content: "";
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	width: 120px;
+	height: 2px;
+	background-color: black;
+}
+
+.special-heading h2::after {
+	content: "";
+	position: absolute;
+	bottom: -38px;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	width: 15px;
+	height: 15px;
+	border: 2px solid black;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	background-color: white;
+}
+
+.special-heading p {
+	width: 60%;
+	margin: 0 auto 100px;
+	max-width: 100%;
+	line-height: 2;
+	color: #777;
+}
+
 /* vertical and horizontal centering with pos and transform */
 .v-center {
 	position: absolute;
@@ -290,4 +346,12 @@ header nav .form i {
 	.landing .change-background {
 		display: none;
 	}
+}
+
+/********************/
+/***** Services *****/
+/********************/
+
+.services {
+	padding: 100px;
 }
