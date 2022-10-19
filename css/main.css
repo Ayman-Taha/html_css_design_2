@@ -4,6 +4,9 @@
 :root {
 	--main-theme-color: #19c8fa;
 	--transparent-color: rgb(15 116 143 / 70%);
+	--section-padding: 100px 0;
+	--p-line-height: 2;
+	--p-text-color: #777;
 }
 
 /************************/
@@ -106,8 +109,8 @@ ul {
 	width: 60%;
 	margin: 0 auto 100px;
 	max-width: 100%;
-	line-height: 2;
-	color: #777;
+	line-height: var(--p-line-height);
+	color: var(--p-text-color);
 }
 
 /* vertical and horizontal centering with pos and transform */
@@ -292,7 +295,7 @@ header nav .form i {
 
 .landing .landing-content .text p {
 	font-size: 1rem;
-	line-height: 2;
+	line-height: var(--p-line-height);
 }
 
 /* landing slider arrows and bullets */
@@ -353,5 +356,43 @@ header nav .form i {
 /********************/
 
 .services {
-	padding: 100px;
+	padding: var(--section-padding);
+}
+
+.services .serv {
+	display: flex;
+}
+
+.services .serv i {
+	margin-right: 50px;
+}
+
+.services .serv h3 {
+	margin-bottom: 15px;
+	color: var(--main-theme-color);
+}
+
+.services .serv p {
+	line-height: var(--p-line-height);
+	color: var(--p-text-color);
+}
+
+@media (min-width: 768px) {
+	.services .services-content {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+		gap: 60px 40px;
+	}
+}
+
+@media (max-width: 767px) {
+	.services .serv {
+		flex-direction: column;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	.services .serv i {
+		margin: 0 auto 10px;
+	}
 }
