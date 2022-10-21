@@ -662,3 +662,97 @@ header nav .form i {
 		margin-top: 0px;
 	}
 }
+
+/*****************/
+/***** Stats *****/
+/*****************/
+
+.stats {
+	padding: var(--section-padding);
+	text-align: center;
+	background-image: url(../images/stats.png);
+	background-size: cover;
+	position: relative;
+}
+
+.stats::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.stats .container {
+	position: relative; /* to make sure the container is above the overlay with z-index auto */
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.stats .container .stat {
+	background-color: var(--transparent-color);
+	color: white;
+	padding: 50px;
+}
+
+.stats .container .stat i {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	background-color: black;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	margin: 0 auto 30px;
+}
+
+.stats .container .stat .number {
+	font-size: 50px;
+	font-weight: bold;
+	margin: 0 0 20px;
+}
+
+.stats .container .stat p {
+	font-size: 14px;
+}
+
+/* responsiveness for different screen sizes (mobile 1st) */
+@media (max-width: 767px) {
+	.stats .container {
+		padding: 0;
+	}
+
+	.stats .container .stat {
+		flex-basis: 100%;
+		position: relative;
+	}
+
+	/* to add a partial horizontal line */
+	.stats .container .stat:not(:last-child)::after {
+		content: "";
+		position: absolute;
+		background-color: white;
+		width: 80%;
+		height: 1px;
+		bottom: 0;
+		left: 10%;
+	}
+}
+
+@media (min-width: 768px) {
+	.stats .container .stat {
+		flex-basis: 50%;
+	}
+}
+
+@media (min-width: 992px) {
+	.stats .container .stat {
+		flex-basis: 25%;
+	}
+}
