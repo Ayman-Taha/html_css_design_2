@@ -770,6 +770,7 @@ header nav .form i {
 	padding: var(--section-padding);
 }
 
+/* container style and responsiveness */
 .test_skills .container {
 	display: flex;
 	justify-content: space-between;
@@ -794,4 +795,69 @@ header nav .form i {
 	line-height: var(--p-line-height);
 	text-align: center;
 	margin-bottom: 50px;
+}
+
+/* testimonial */
+.testimonial {
+	display: flex;
+	margin-bottom: 30px;
+	align-items: center;
+}
+
+.testimonial img {
+	width: 100px;
+	margin-right: 50px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+/*small screens responsiveness */
+@media (max-width: 767px) {
+	.testimonial {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.testimonial img {
+		margin: 0 auto 20px;
+	}
+}
+
+.testimonial text {
+	line-height: var(--p-line-height);
+	border-bottom: 1px solid #ccc;
+}
+
+.testimonial text p {
+	color: var(--p-text-color);
+	text-align: right;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+/* bullets */
+.testimonials .bullets {
+	display: flex;
+	justify-content: center;
+	margin: 50px 0;
+}
+
+.testimonials .bullets li {
+	width: 15px;
+	height: 15px;
+	border: 1px solid #aaa;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	margin-right: 10px;
+}
+
+/* the active bullet */
+.testimonials .bullets li.active {
+	background-color: var(--main-theme-color);
+	border-color: var(--main-theme-color);
 }
