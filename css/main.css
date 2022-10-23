@@ -661,6 +661,11 @@ header nav .form i {
 		bottom: 0px;
 		margin-top: 0px;
 	}
+
+	/* make sure the image still partially hidden by the next section */
+	.about .container {
+		height: 600px;
+	}
 }
 
 /*****************/
