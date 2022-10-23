@@ -761,3 +761,37 @@ header nav .form i {
 		flex-basis: 25%;
 	}
 }
+
+/************************/
+/***** Testimonials *****/
+/************************/
+
+.test_skills {
+	padding: var(--section-padding);
+}
+
+.test_skills .container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+@media (min-width: 992px) {
+	.test_skills .container > div {
+		flex-basis: 45%;
+	}
+}
+
+.test_skills .container > div > h3 {
+	margin: 0 0 30px;
+	font-weight: normal;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.test_skills .container > div > p {
+	color: var(--p-text-color);
+	line-height: var(--p-line-height);
+	text-align: center;
+	margin-bottom: 50px;
+}
