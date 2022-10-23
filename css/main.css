@@ -825,12 +825,12 @@ header nav .form i {
 	}
 }
 
-.testimonial text {
+.testimonial .text {
 	line-height: var(--p-line-height);
 	border-bottom: 1px solid #ccc;
 }
 
-.testimonial text p {
+.testimonial .text p {
 	color: var(--p-text-color);
 	text-align: right;
 	font-size: 14px;
@@ -860,4 +860,58 @@ header nav .form i {
 .testimonials .bullets li.active {
 	background-color: var(--main-theme-color);
 	border-color: var(--main-theme-color);
+}
+
+/* skills part */
+.skill {
+	margin-bottom: 40px;
+}
+
+.skill h4 {
+	margin-bottom: 15px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+/* progress bar */
+.skill .progress-bar {
+	background-color: #dedadc;
+	height: 30px;
+}
+
+/* progress bar filling */
+.skill .progress-bar span {
+	display: block;
+	background-color: var(--main-theme-color);
+	height: 100%;
+	position: relative;
+}
+
+/* progress number above the bar */
+.skill .progress-bar span::before {
+	content: attr(data-progress);
+	position: absolute;
+	top: -40px;
+	right: -20px;
+	width: 40px;
+	padding: 5px 0;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+/* little arrow under the progress number */
+.skill .progress-bar span::after {
+	content: "";
+	position: absolute;
+	border-style: solid;
+	border-width: 8px;
+	border-color: black transparent transparent;
+	right: -8px;
+	top: -15px;
 }
