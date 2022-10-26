@@ -1152,3 +1152,13 @@ q::after {
 	line-height: var(--p-line-height);
 	margin-left: 50px;
 }
+
+@media (max-width: 991px) {
+	.subscribe p {
+		margin: 30px 0 0;
+		text-align: center;
+	}
+}
+/*********************/
+/***** Subscribe *****/
+/*********************/
