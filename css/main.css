@@ -967,6 +967,54 @@ q::after {
 	margin-left: 10px;
 }
 
-/******************/
-/***** Pricin *****/
-/******************/
+/*******************/
+/***** Pricing *****/
+/*******************/
+
+.pricing {
+	padding: var(--section-padding);
+}
+
+.pricing .plans {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 30px;
+}
+
+.pricing .plans .plan {
+	background-color: #fefcfc;
+	text-align: center;
+}
+
+.pricing .plans .plan .header {
+	padding: 40px 20px;
+	border-top: 1px solid var(--main-theme-color);
+	border-bottom: 1px solid var(--main-theme-color);
+}
+
+.pricing .plans .plan .header h3 {
+	font-weight: normal;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+}
+
+.pricing .plans .plan .header .price {
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.pricing .plans .plan .header .price::before {
+	content: "$";
+	font-size: 20px;
+	font-weight: normal;
+	position: relative;
+	top: -40px;
+	margin-right: 15px;
+}
+
+.pricing .plans .plan .header .price::after {
+	content: "/Mo";
+	font-size: 20px;
+	position: relative;
+	right: -15px;
+}
