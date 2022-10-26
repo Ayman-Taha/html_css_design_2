@@ -29,7 +29,8 @@ ul {
 	list-style: none;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
 	outline: none;
 }
 
@@ -1159,6 +1160,90 @@ q::after {
 		text-align: center;
 	}
 }
-/*********************/
-/***** Subscribe *****/
-/*********************/
+
+/**********************/
+/***** Contact-us *****/
+/**********************/
+
+.contact-us {
+	padding: var(--section-padding);
+}
+
+.contact-us .content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact-us .content form {
+	flex-basis: 70%;
+}
+
+.contact-us .content form .main-input {
+	display: block;
+	padding: 20px;
+	border: 1px solid #ccc;
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+.contact-us .content form textarea {
+	height: 200px;
+}
+
+.contact-us .content form input[type="submit"] {
+	background-color: var(--main-theme-color);
+	color: white;
+	padding: 20px;
+	border: none;
+	display: flex;
+	margin-left: auto; /* with flex it aligns the item on the right */
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.contact-us .content .info {
+	flex-basis: 25%;
+}
+
+.contact-us .content .info h4 {
+	text-transform: uppercase;
+	font-weight: 500px;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.contact-us .content .info .phone {
+	display: block;
+	color: var(--p-text-color);
+	margin-bottom: 10px;
+}
+
+.contact-us .content .info .info-address {
+	margin-top: 90px;
+}
+
+.contact-us .content .info address {
+	color: var(--p-text-color);
+	line-height: var(--p-line-height);
+}
+
+@media (max-width: 767px) {
+	.contact-us .content {
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+
+	.contact-us .content form input[type="submit"] {
+		margin: auto;
+	}
+
+	.contact-us .content .info {
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 50px;
+	}
+
+	.contact-us .content .info .info-address {
+		margin-top: 0;
+	}
+}
