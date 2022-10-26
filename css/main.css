@@ -33,6 +33,7 @@ ul {
 	margin: 0 auto;
 	padding: 0 15px;
 }
+
 /* small screens */
 @media (min-width: 768px) {
 	.container {
@@ -766,31 +767,31 @@ header nav .form i {
 /***** Test & Skills *****/
 /*************************/
 
-.test_skills {
+.test-skills {
 	padding: var(--section-padding);
 }
 
 /* container style and responsiveness */
-.test_skills .container {
+.test-skills .container {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
 @media (min-width: 992px) {
-	.test_skills .container > div {
+	.test-skills .container > div {
 		flex-basis: 45%;
 	}
 }
 
-.test_skills .container > div > h3 {
-	margin: 0 0 30px;
+.test-skills .container > div > h3 {
 	font-weight: normal;
 	text-align: center;
 	text-transform: uppercase;
+	margin-bottom: 30px;
 }
 
-.test_skills .container > div > p {
+.test-skills .container > div > p {
 	color: var(--p-text-color);
 	line-height: var(--p-line-height);
 	text-align: center;
@@ -1017,4 +1018,53 @@ q::after {
 	font-size: 20px;
 	position: relative;
 	right: -15px;
+}
+
+.pricing .plans .plan ul {
+	border-bottom: 1px solid var(--main-theme-color);
+}
+
+.pricing .plans .plan ul li {
+	padding: 20px;
+	position: relative;
+}
+
+.pricing .plans .plan ul li:not(:last-child)::after {
+	content: "";
+	width: 120px;
+	height: 1px;
+	background-color: var(--main-theme-color);
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+}
+
+.pricing .plans .plan .footer a {
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+	border: 1px solid var(--main-theme-color);
+	width: fit-content;
+	margin: 30px auto;
+}
+
+.pricing .contact {
+	text-align: center;
+	margin: 50px auto 20px;
+	font-size: 20px;
+}
+
+.pricing .contact-link {
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+	background-color: var(--main-theme-color);
+	color: white;
+	width: fit-content;
+	margin: 20px auto;
 }
