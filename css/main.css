@@ -1227,6 +1227,7 @@ q::after {
 	line-height: var(--p-line-height);
 }
 
+/* responsive at small screens */
 @media (max-width: 767px) {
 	.contact-us .content {
 		flex-direction: column-reverse;
@@ -1246,4 +1247,60 @@ q::after {
 	.contact-us .content .info .info-address {
 		margin-top: 0;
 	}
+}
+
+/******************/
+/***** Footer *****/
+/******************/
+
+.footer {
+	padding: 50px 0;
+	background-image: url("../images/subscribe.jpg");
+	background-size: cover;
+	position: relative;
+	color: white;
+	text-align: center;
+}
+
+.footer::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.footer .container {
+	position: relative; /* to keep the contents over the layover */
+}
+
+.footer img {
+	margin-bottom: 20px;
+}
+
+.footer p:not(.copyright) {
+	text-transform: uppercase;
+	padding: 20px;
+	border-bottom: 1px solid white;
+	font-size: 22px;
+	width: fit-content;
+	margin: 20px auto;
+}
+
+.footer .social-icons a {
+	text-decoration: none;
+	color: white;
+	padding: 10px 15px;
+	font-size: 18px;
+}
+
+.footer .copyright {
+	margin-top: 40px;
+}
+
+.footer .copyright span {
+	color: var(--main-theme-color);
+	font-weight: bold;
 }
