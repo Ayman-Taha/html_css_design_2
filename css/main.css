@@ -15,9 +15,9 @@
 /************************/
 
 * {
-	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	scroll-behavior: smooth;
 	padding: 0;
 	margin: 0;
@@ -84,11 +84,11 @@ textarea:focus {
 	position: absolute;
 	bottom: -30px;
 	left: 50%;
-	transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
 	width: 120px;
 	height: 2px;
 	background-color: black;
@@ -99,19 +99,19 @@ textarea:focus {
 	position: absolute;
 	bottom: -38px;
 	left: 50%;
-	transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
 	width: 15px;
 	height: 15px;
 	border: 2px solid black;
-	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
+	border-radius: 50%;
 	background-color: white;
 }
 
@@ -127,21 +127,21 @@ textarea:focus {
 .v-center {
 	position: absolute;
 	top: 50%;
-	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 .h-center {
 	position: absolute;
 	left: 50%;
-	transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
 }
 
 /******************/
@@ -196,11 +196,11 @@ header nav ul li a {
 	color: white;
 	text-decoration: none;
 	padding: 40px 10px;
-	transition: 0.3s;
 	-webkit-transition: 0.3s;
 	-moz-transition: 0.3s;
 	-ms-transition: 0.3s;
 	-o-transition: 0.3s;
+	transition: 0.3s;
 	position: relative;
 	z-index: 1;
 }
@@ -330,11 +330,11 @@ header nav .form i {
 	width: 20px;
 	height: 20px;
 	border: 1px solid white;
-	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
+	border-radius: 50%;
 	margin-right: 10px;
 }
 
@@ -531,11 +531,11 @@ header nav .form i {
 
 .portfolio .projects-container .project img {
 	max-width: 100%;
-	transition: 0.3s;
 	-webkit-transition: 0.3s;
 	-moz-transition: 0.3s;
 	-ms-transition: 0.3s;
 	-o-transition: 0.3s;
+	transition: 0.3s;
 }
 
 .portfolio .projects-container .project .project-content {
@@ -545,11 +545,11 @@ header nav .form i {
 	padding: 20px;
 	background-color: white;
 	width: 100%;
-	transition: 0.3s;
 	-webkit-transition: 0.3s;
 	-moz-transition: 0.3s;
 	-ms-transition: 0.3s;
 	-o-transition: 0.3s;
+	transition: 0.3s;
 }
 
 .portfolio .projects-container .project .project-content h4 {
@@ -568,11 +568,11 @@ header nav .form i {
 }
 
 .portfolio .projects-container .project:hover img {
-	transform: rotate(3deg) scale(1.1);
 	-webkit-transform: rotate(3deg) scale(1.1);
 	-moz-transform: rotate(3deg) scale(1.1);
 	-ms-transform: rotate(3deg) scale(1.1);
 	-o-transform: rotate(3deg) scale(1.1);
+	transform: rotate(3deg) scale(1.1);
 }
 
 /* responsiveness for different screen sizes */
@@ -719,11 +719,11 @@ header nav .form i {
 	background-color: black;
 	justify-content: center;
 	align-items: center;
-	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
+	border-radius: 50%;
 	margin: 0 auto 30px;
 }
 
@@ -817,11 +817,11 @@ header nav .form i {
 .testimonial img {
 	width: 100px;
 	margin-right: 50px;
-	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
+	border-radius: 50%;
 }
 /*small screens responsiveness */
 @media (max-width: 767px) {
@@ -858,11 +858,11 @@ header nav .form i {
 	width: 15px;
 	height: 15px;
 	border: 1px solid #aaa;
-	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
+	border-radius: 50%;
 	margin-right: 10px;
 }
 
@@ -905,11 +905,11 @@ header nav .form i {
 	right: -20px;
 	width: 40px;
 	padding: 5px 0;
-	border-radius: 4px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	-ms-border-radius: 4px;
 	-o-border-radius: 4px;
+	border-radius: 4px;
 	background-color: black;
 	color: white;
 	text-align: center;
@@ -1046,11 +1046,11 @@ q::after {
 	position: absolute;
 	left: 50%;
 	bottom: 0;
-	transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
 }
 
 .pricing .plans .plan .footer a {
@@ -1122,11 +1122,11 @@ q::after {
 .subscribe form i {
 	position: absolute;
 	top: 50%;
-	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
 	left: 25px;
 }
 
