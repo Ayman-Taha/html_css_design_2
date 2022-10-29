@@ -1,6 +1,7 @@
 /****************************/
 /***** Global Variables *****/
 /****************************/
+
 :root {
 	--main-theme-color: #19c8fa;
 	--transparent-color: rgb(15 116 143 / 70%);
@@ -12,6 +13,7 @@
 /************************/
 /***** Global Rules *****/
 /************************/
+
 * {
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -45,12 +47,14 @@ textarea:focus {
 		width: 750px;
 	}
 }
+
 /* medium screens */
 @media (min-width: 992px) {
 	.container {
 		width: 970px;
 	}
 }
+
 /* large screens */
 @media (min-width: 1200px) {
 	.container {
